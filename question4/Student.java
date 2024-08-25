@@ -4,9 +4,10 @@ import java.util.HashMap;
 
 public class Student {
 
-
+//  HashMap Created
     private HashMap<String,Integer> map =new HashMap<String, Integer>();
 
+//    Getter & Setter Method
     public HashMap<String, Integer> getMap() {
         return this.map;
     }

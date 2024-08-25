@@ -9,17 +9,18 @@ public class Student {
     private int age;
     private String course;
 
+// Empty Constructor
    public  Student(){
 
     }
-
+//  Parameterized Constructor
     public Student(String rollNo, String name, int age, String course){
        this.rollNo = rollNo;
        this.name = name;
        this.age = age;
        this.course = course;
     }
-
+//  Getter Method
     public String getRollNo(){
        return this.rollNo;
     }
@@ -36,6 +37,7 @@ public class Student {
        return this.course;
     }
 
+//  Setter method
     public void setRollNo(String rollNo){
        this.rollNo = rollNo;
     }
@@ -65,9 +67,13 @@ public class Student {
 
     System.out.println("Enter the Name: ");
     String name = scanner.nextLine();
+
+//  Creating an Exception
     try {
-        String pattern = "[a-zA-Z]";
-        if (!name.matches(pattern)) {
+        String pattern = "^[a-zA-Z\\s]*$";
+        if (name.matches(pattern)) {
+
+        }else{
             throw new NameNotValidException("Name should not contain number or special character!!!!");
         }
     }catch (NameNotValidException nameExp){

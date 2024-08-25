@@ -6,7 +6,10 @@ import java.util.Scanner;
 public class HashMapDemo {
 
     public static void main(String[] args) {
+//        Scanner Method
         Scanner scanner =new Scanner(System.in);
+
+//        Creating a Object
         Student student1 =new Student();
 
         for(int i = 0; i<2; i++) {
